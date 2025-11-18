@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Absensi Digital Kelas</h1>
 
+    <div id="add-section">
+        <input type="text" id="namaSiswa" placeholder="Nama siswa baru...">
+        <button onclick="tambahSiswa()">Tambah</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Hadir</th>
+            </tr>
+        </thead>
+        <tbody id="tabelSiswa"></tbody>
+    </table>
+
+    <button id="saveBtn" onclick="simpanData()">Simpan</button>
+    <button id="resetBtn" onclick="resetData()">Reset</button>
+    <button id="downloadBtn" onclick="downloadCSV()">Download CSV</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
